@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta name="description" content="Melanie Hamasaki's personal website">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+    @keyframes enlargeLink {
+      from {font-size: 25;}
+      to {font-size: 40;}
+    }
+
+    @keyframes spin{
+      100% {transform: rotate(1turn); }
+    }
+
+    body{
+      background-color: lightblue;
+    }
+
+    div {/* applies to all divs */
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    h1 {
+      color: black;
+      font-size: 40px;
+      transition: font-size 2s;
+    }
+
+    h1:hover{
+      font-size: 10px;
+    }
+
+    .header {
+      font-size: 20px;
+      color: white;
+      padding: 10px;
+      margin: 20px 40px 20px 40px;
+      text-align: center;
+      border-radius: 5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: white;
+    }
+
+    .socialmedia {
+      color: black;
+      animation: spin 10s linear infinite;
+      animation-play-state: paused;
+    }
+
+    .socialmedia:hover{
+      animation-play-state: running;
+    }
+
+    .container-fluid {
+      margin: 20px 40px 20px 40px;
+      border-radius: 5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: white;
+
+    }
+    #bio{
+    }
+
+    #projects{
+    }
+
+    </style>
+    <title>Melanie Hamasaki</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Melanie Hamasaki</h1>
+      <span> <a class="socialmedia" href = "https://github.com/mhamasaki15"> Github</a></span>
+      <span> | </span>
+      <span> <a class="socialmedia" href = "https://www.linkedin.com/in/melanie-hamasaki-7067a3112"> LinkedIn</a></span>
+      <span> | </span>
+      <span> <a class="socialmedia" href = "mailto:mhamasak@usc.edu"> Contact </a> <span>
+      <span> | </span>
+      <span> <a class="socialmedia" href = ""> Resume </a> <span>
+
+    </div>
+
+    <div class ="container-fluid">
+      <div class ="row">
+        <div class="col-sm-4" id="bio">
+          <h2> About me </h2>
+          <img src="me.JPG" style="width: 100%"> </img>
+          <p> blah blah blah something about myself blah blah blah i totally didnt procrastinate
+            this part of the website. blah blah blah. go scope
+            fight on!
+          </p>
+        </div>
+        <div class="col-sm-1"> </div>
+        <div class="col-sm-7" id="projects">
+          <h2> Projects </h2>
+          <h3> NAME OF PROJECT 1 </h3>
+          <p> adsjfasdfklasdf wow this project is great11!!!!1 wowowo!!!! </p>
+
+          <h3> name of PROJECT 2 </h3>
+          <p> wow what do you know this project is ALSO GREAT!!! </p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
