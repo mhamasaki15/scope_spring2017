@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+  background-color: #FEFCFB;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  background-color: #003399;
+  padding: 2px 0; /* top and bottom to 2, left and right to 0*/
+}
+
+.ikea-logo {
+  height: 50px;
+  margin: 0 10px;
+}
+
+img{
+  text-align: center;
+  /*display: block;
+  margin: 0 auto; */
+}
+
+
+.navbar-default .navbar-nav>li>a /* all list items and links in these classes */ {
+  color: #FFCC00;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: grey;
+}
+
+.divider{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #003399;
+  color: #003399;
+  background-color: #FFCC00;
+}
+
+
+.furni-item{
+  border-radius: 50%;
+  height: 150px;
+}

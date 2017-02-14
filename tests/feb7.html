@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Furniture Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" rel="stylesheet"/>
+    <link href="teststyle.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="https://usc.edu" target="blank">
+          <img class="ikea-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/2000px-Ikea_logo.svg.png"/>
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#" onclick="click0()">Home</a></li>
+          <li><a href="#" onclick="click1()">Chairs</a></li>
+          <li><a href="#" onclick="click2()">Desks</a></li>
+          <li><a href="#" onclick="click3()">Meatballs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="introduction">
+      <div class="row">
+          <div class="col-md-5">
+            <h1> Welcome to an IKEA Knock-off</h1>
+            <p> We actually just buy things off Free for Sale and refurbish them </p>
+          </div>
+          <div class="col-md-7">
+            <img class="img-responsive" src="http://www.ikea.com/PIAimages/0312397_PE429728_S5.JPG" style="height:250px"/>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1 class="divider"> Categories </h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" id="meatballs">
+          <img class="furni-item" src="http://twitchy.com/wp-content/uploads/2013/02/ikea_meatballs.jpg">
+          <h2> Meatballs </h2>
+        </div>
+        <div class="col-sm-4" id="chairs">
+          <img class="furni-item" src="http://www.ikea.com/PIAimages/0173544_PE327678_S5.JPG">
+          <h2> Chairs </h2>
+        </div>
+        <div class="col-sm-4" id="desks">
+          <img class="furni-item" src="http://www.ikea.com/PIAimages/0133380_PE288797_S5.JPG">
+          <h2> Desks </h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function click0() = {
+      var arr = [];
+      arr.push(document.getElementById('chairs'));
+      arr.push(document.getElementById('desks'));
+      arr.push(document.getElementById('meatballs'));
+      for (var i=0; i<3; i++){
+        arr[i].style.border = "none";
+      }
+    }
+    function click1() = {
+      var elem = document.GetElementById('chairs');
+      elem.style.border = "1px solid black";
+    }
+
+    function click2() = {
+      var elem = document.GetElementById('desks');
+      elem.style.border = "1px solid red";
+    }
+
+    function click3() = {
+      var elem = document.GetElementById('meatballs');
+      elem.style.border = "1px solid steelblue";
+    }
+    </script>
+  </body>
+</html>
